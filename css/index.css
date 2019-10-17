@@ -349,6 +349,14 @@ header nav a:hover {
 		border-top: 2px solid black;
 		border-bottom: 2px solid black;
 	}
+
+	#services-facts div:last-child {
+		display: none;
+	}
+
+	#services-facts div:first-child {
+		width: 100%;
+	}
 }
 
 @media (max-width: 600px) {
@@ -362,21 +370,30 @@ header nav a:hover {
 		width: 100%;
 		padding: 15px 0 ;
 	}
+
+	#services-content {
+		flex-direction: column;
+		padding-top: 20px;
+	}
+
+	.services-content-item {
+		width: 100%;
+		margin-bottom: 20px;
+	}
 }
 
-@media (max-width: 580px) {
-	body {
-		margin: 0;
-	}
+@media (max-width: 560px) {
+	
 	
 	header nav {
 		flex-direction: column;
 		align-items: center;
 		padding: 10px 0;
+		margin: 0;
 	}
 
 	nav a {
-		width: 100%;
+		width: 100vw;
 		border-top: 1px solid grey;
 		padding: 13px 0;
 		text-align: center;	
